@@ -1,0 +1,22 @@
+.wrapper{
+    width: 100%;
+    height: calc(100vh );
+    background-color: gainsboro;
+    /* padding-top: 100px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.head{
+    font-size: 150px;
+    color: #ff7c00;
+    font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.h2{
+    font-size: 30px ;
+    color: grey;
+}

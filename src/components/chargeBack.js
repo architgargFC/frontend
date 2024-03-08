@@ -40,9 +40,7 @@ getData()
               <TableCell align="left" sx={{ borderBottom: "2px solid grey" }}>
                 RRN #
               </TableCell>
-              <TableCell align="left" sx={{ borderBottom: "2px solid grey" }}>
-                Chargeback Check (Original Data)
-              </TableCell>
+             
               <TableCell align="left" sx={{ borderBottom: "2px solid grey" }}>
                 Chargeback Check (Predicted Data)
               </TableCell>
@@ -60,7 +58,6 @@ getData()
                 >
                   <TableCell align="left">{d["user_id"][x]}</TableCell>
                   <TableCell align="left">{d["rrn"][x]}</TableCell>
-                  <TableCell align="left">{d["is_chargeback_original"][x]}</TableCell>
                   <TableCell align="left">{d["is_chargeback"][x]}</TableCell>
                   <TableCell align="left">{d["is_chargeback_confidence"][x]}</TableCell>
                 
