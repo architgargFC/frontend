@@ -38,9 +38,11 @@ getData()
                 User Id
               </TableCell>
               <TableCell align="left" sx={{ borderBottom: "2px solid grey" }}>
+                Transaction Id
+              </TableCell>
+              <TableCell align="left" sx={{ borderBottom: "2px solid grey" }}>
                 RRN #
               </TableCell>
-             
               <TableCell align="left" sx={{ borderBottom: "2px solid grey" }}>
                 Chargeback Check (Predicted Data)
               </TableCell>
@@ -53,14 +55,16 @@ getData()
             <TableBody>
               {Array.from(Array(10).keys()).map((x) => (
                 <TableRow
-                    key={d["user_id"][x]}
+                  key={d["user_id"][x]}
                   sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
                 >
                   <TableCell align="left">{d["user_id"][x]}</TableCell>
+                  <TableCell align="left">{d["transaction_id"][x]}</TableCell>
                   <TableCell align="left">{d["rrn"][x]}</TableCell>
                   <TableCell align="left">{d["is_chargeback"][x]}</TableCell>
-                  <TableCell align="left">{d["is_chargeback_confidence"][x]}</TableCell>
-                
+                  <TableCell align="left">
+                    {d["is_chargeback_confidence"][x]}
+                  </TableCell>
                 </TableRow>
               ))}
             </TableBody>
